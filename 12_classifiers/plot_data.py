@@ -42,8 +42,9 @@ def plot_data_by_label(input_variables, labels, label_selector, symbol):
 
 plot_data_by_label(X_train, Y_train_unencoded, 0, 'bs')
 plot_data_by_label(X_train, Y_train_unencoded, 1, 'g^')
-plt.gca().axes.set_xlabel("Input A", fontsize=20)
-plt.gca().axes.set_ylabel("Input B", fontsize=20)
-plt.gca().axes.xaxis.set_ticklabels([])
-plt.gca().axes.yaxis.set_ticklabels([])
+ax = plt.subplot()
+ax.set_xlabel("Input A", fontsize=20)
+ax.axes.set_ylabel("Input B", fontsize=20)
+ax.axes.xaxis.set_ticklabels([])
+ax.axes.yaxis.set_ticklabels([])
 plt.show()

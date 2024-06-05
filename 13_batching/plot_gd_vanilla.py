@@ -62,7 +62,7 @@ L = losses.reshape((MESH_SIZE, MESH_SIZE))
 
 # Plot surface
 sns.set(rc={"axes.facecolor": "white", "figure.facecolor": "white"})
-ax = plt.figure().gca(projection="3d")
+ax = plt.figure().add_subplot(projection="3d")
 ax.xaxis.set_ticks([])
 ax.yaxis.set_ticks([])
 ax.zaxis.set_ticks([])

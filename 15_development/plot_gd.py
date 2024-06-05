@@ -37,8 +37,9 @@ losses = [loss(X, Y, w) for w in weights]
 
 # Plot weights and losses
 plt.axis([-1, 4, 0, 1000])
-plt.gca().axes.xaxis.set_ticklabels([])
-plt.gca().axes.yaxis.set_ticklabels([])
+ax = plt.subplot()
+ax.xaxis.set_ticklabels([])
+ax.yaxis.set_ticklabels([])
 plt.plot(weights, losses, color="black")
 
 # Put a green cross on the minimum loss

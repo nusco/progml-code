@@ -34,7 +34,7 @@ w1, w2 = nn.train(X_train, Y_train,
 
 # Plot the axes
 sns.set(rc={"axes.facecolor": "white", "figure.facecolor": "white"})
-ax = plt.figure().gca(projection="3d")
+ax = plt.figure().add_subplot(projection="3d")
 ax.set_zticks([0, 0.5, 1])
 ax.set_xlabel("Input A", labelpad=15, fontsize=30)
 ax.set_ylabel("Input B", labelpad=15, fontsize=30)
