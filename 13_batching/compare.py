@@ -70,7 +70,7 @@ def plot_loss(data, n_hidden_nodes, batch_size, lr,
 
 
 def show_plot():
-    sns.set()
+    sns.set_theme()
 
     plt.xticks(fontsize=15)
     plt.yticks(fontsize=15)

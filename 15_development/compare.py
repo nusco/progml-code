@@ -74,7 +74,7 @@ def configuration(data, n_hidden_nodes, batch_size, lr,
 
 # Show a chart comparing the loss histories for all configurations
 def show_results():
-    sns.set()
+    sns.set_theme()
     plt.xticks(fontsize=15)
     plt.yticks(fontsize=15)
     plt.xlabel("Seconds", fontsize=30)

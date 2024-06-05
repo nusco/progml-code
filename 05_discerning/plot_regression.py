@@ -34,7 +34,7 @@ w, b = train(X, Y, iterations=100000, lr=0.001)
 
 import matplotlib.pyplot as plt
 import seaborn as sns
-sns.set()
+sns.set_theme()
 plt.plot(X, Y, "bo")
 ax = plt.subplot()
 ax.get_xaxis().set_visible(False)

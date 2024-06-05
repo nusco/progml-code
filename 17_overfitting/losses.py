@@ -7,7 +7,7 @@ import seaborn as sns
 
 
 def plot(history):
-    sns.set()  # Switch to the Seaborn look
+    sns.set_theme()  # Switch to the Seaborn look
     plt.plot(history.history['loss'], label='Training set',
              color='blue', linestyle='-')
     plt.plot(history.history['val_loss'], label='Validation set',

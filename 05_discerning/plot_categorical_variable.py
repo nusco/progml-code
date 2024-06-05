@@ -3,7 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-sns.set()
+sns.set_theme()
 
 X, _, _, Y = np.loadtxt("police.txt", skiprows=1, unpack=True)
 

@@ -16,7 +16,7 @@ def loss(X, Y, w, b):
 # Load data
 X, Y = np.loadtxt("pizza.txt", skiprows=1, unpack=True)
 
-sns.set()  # Activate Seaborn
+sns.set_theme()  # Activate Seaborn
 
 # Compute losses for w ranging from -1 to 4
 weights = np.linspace(-1.0, 4.0, 200)

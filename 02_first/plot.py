@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-sns.set()                                                # activate Seaborn
+sns.set_theme()                                                # activate Seaborn
 plt.axis([0, 50, 0, 50])                                 # scale axes (0 to 50)
 plt.xticks(fontsize=15)                                  # set x axis ticks
 plt.yticks(fontsize=15)                                  # set y axis ticks

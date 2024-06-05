@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 from mpl_toolkits.mplot3d import Axes3D
 import seaborn as sns
-sns.set()
+sns.set_theme()
 
 
 def sigmoid(z):

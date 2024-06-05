@@ -38,7 +38,7 @@ print("Prediction: x=%d => y=%.2f" % (20, predict(20, w)))
 # Plot the chart
 import matplotlib.pyplot as plt
 import seaborn as sns
-sns.set()
+sns.set_theme()
 plt.plot(X, Y, "bo")
 plt.xticks(fontsize=15)
 plt.yticks(fontsize=15)
