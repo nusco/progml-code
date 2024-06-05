@@ -28,8 +28,9 @@ def plot(points, clusters):
     red_points = points[clusters == 2]
     plt.plot(red_points[:, 0], red_points[:, 1], 'ro')
 
-    plt.gca().axes.xaxis.set_ticklabels([])
-    plt.gca().axes.yaxis.set_ticklabels([])
+    ax = plt.subplot()
+    ax.xaxis.set_ticklabels([])
+    ax.yaxis.set_ticklabels([])
 
     plt.show()
     input("Press <Enter>...")

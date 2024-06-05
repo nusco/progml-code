@@ -1,12 +1,20 @@
 # Programming Machine Learning
 
 This is the source code for Paolo Perrotta's [Programming Machine Learning]
-(http://www.pragprog.com/titles/pplearn) book.
+(http://www.pragprog.com/titles/pplearn) book, updated to run on a recent
+Python and recent libraries. It contains a few small differences from the
+code printed in the book. If you find any issue, please open an
+[issue](https://github.com/nusco/progml-code/issues) or send me a pull
+request.
 
 To run this code, you need [Python 3](https://www.python.org/downloads/) (or
 greater) and a few libraries. You can install the libraries via Python's
 built-in package manager _pip_, or via the more sophisticated _Conda_ package
 manager. Let's look at both.
+
+To get the exact same code as the book's second printing:
+
+    git checkout P2.0
 
 
 ### Installing with pip
@@ -14,11 +22,12 @@ manager. Let's look at both.
 If you have Python 3, then you should also have pip. You can install the
 libraries straight away:
 
-    pip3 install numpy==1.19.5
-    pip3 install matplotlib==3.2.2
-    pip3 install seaborn==0.11.1
-    pip3 install scikit-learn==0.24.1
-    pip3 install keras==2.3.1
+    pip3 install numpy==1.26.4
+    pip3 install matplotlib==3.8.4
+    pip3 install seaborn==0.13.2
+    pip3 install scikit-learn==1.5.0
+    pip3 install keras==3.3.3
+    pip3 install tensorflow==
 
 If you prefer to run the code in a Jupyter Notebook, then you also need Jupyter:
 
@@ -39,7 +48,7 @@ complete distribution is a large install.
 
 Here is how you create a new Python 3 environment named `machinelearning` with Conda:
 
-    conda create --name=machinelearning python=3.7
+    conda create --name=machinelearning python=3.12
 
 Now you can make `machinelearning` the current active environment:
 
@@ -47,11 +56,11 @@ Now you can make `machinelearning` the current active environment:
 
 Next step, you can install libraries in the active environment:
 
-    conda install numpy=1.19.5
-    conda install matplotlib=3.2.2
-    conda install seaborn=0.11.1
-    conda install scikit-learn=0.24.1
-    conda install keras=2.3.1
+    conda install numpy=1.26.4
+    conda install matplotlib=3.8.4
+    conda install seaborn=0.13.2
+    conda install scikit-learn=1.5.0
+    conda install keras=3.3.3
     conda install jupyter=1.0.0
 
 The libraries will stay visible as long as the environment is active. Once you
@@ -66,6 +75,7 @@ Happy hacking!
 
 Excerpted from "Programming Machine Learning", published by The Pragmatic
 Bookshelf.
+
 Copyrights apply to this code. It may not be used to create training material,
 courses, books, articles, and the like. Contact us if you are in doubt.
 We make no guarantees that this code is fit for any purpose.

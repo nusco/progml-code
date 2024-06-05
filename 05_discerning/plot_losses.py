@@ -28,7 +28,7 @@ def log_loss(X, Y, w):
 
 
 def prepare_axes():
-    ax = plt.figure().gca(projection="3d")
+    ax = plt.figure().add_subplot(projection="3d")
     ax.clear()
     ax.set_zticklabels(())
     ax.set_xlabel("w1", labelpad=15, fontsize=30)

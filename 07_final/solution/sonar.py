@@ -28,7 +28,7 @@ X = data[:, 0:-1].astype(np.float32)
 #   - Convert all 'M's to True and all 'R's to False
 #   - Convert True and False to 1 and 0, respectively
 labels = data[:, -1].reshape(-1, 1)
-Y_unencoded = (labels == 'M').astype(np.int)
+Y_unencoded = (labels == 'M').astype(int)
 
 # Split into training and test set:
 SIZE_OF_TRAINING_SET = 160  # Keep the remaining 48 elements for testing

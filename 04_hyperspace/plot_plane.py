@@ -14,7 +14,7 @@ w = np.array([-3.98230894, 0.37333539, 1.69202346])
 
 # Plot the axes
 sns.set(rc={"axes.facecolor": "white", "figure.facecolor": "white"})
-ax = plt.figure().gca(projection="3d")
+ax = plt.figure().add_subplot(projection="3d")
 ax.set_xlabel("Temperature", labelpad=15, fontsize=30)
 ax.set_ylabel("Reservations", labelpad=15, fontsize=30)
 ax.set_zlabel("Pizzas", labelpad=5, fontsize=30)

@@ -5,3 +5,7 @@ sonar_classifier.py.
 This classifier reaches over 79% accuracy on the test set. That's not half bad
 if you consider that, according to the Sonar dataset's documentation, human
 experts rank between 88% and 97%.
+
+The sonar dataset can be found at:
+
+    https://archive.ics.uci.edu/dataset/151/connectionist+bench+sonar+mines+vs+rocks

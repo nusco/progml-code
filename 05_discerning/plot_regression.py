@@ -36,8 +36,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
 plt.plot(X, Y, "bo")
-plt.gca().get_xaxis().set_visible(False)
-plt.gca().get_yaxis().set_visible(False)
+ax = plt.subplot()
+ax.get_xaxis().set_visible(False)
+ax.get_yaxis().set_visible(False)
 x_edge, y_edge = 30, 20
 plt.axis([0, x_edge, 0, y_edge])
 plt.plot([0, x_edge], [b, predict(x_edge, w, b)], linewidth=1.0, color="g")

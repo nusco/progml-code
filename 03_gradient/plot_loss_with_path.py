@@ -67,7 +67,7 @@ L = losses.reshape((MESH_SIZE, MESH_SIZE))
 
 # Plot surface
 sns.set(rc={"axes.facecolor": "white", "figure.facecolor": "white"})
-ax = plt.figure().gca(projection="3d")
+ax = plt.figure().add_subplot(projection="3d")
 ax.set_zticklabels(())
 ax.set_xlabel("Weight", labelpad=20, fontsize=30)
 ax.set_ylabel("Bias", labelpad=20, fontsize=30)

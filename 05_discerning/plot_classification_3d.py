@@ -47,7 +47,7 @@ w = train(X, Y, iterations=10000, lr=0.001)
 
 # Plot the axes
 sns.set(rc={"axes.facecolor": "white", "figure.facecolor": "white"})
-ax = plt.figure().gca(projection="3d")
+ax = plt.figure().add_subplot(projection="3d")
 ax.set_xlabel("Reservations", labelpad=15, fontsize=30)
 ax.set_ylabel("Temperature", labelpad=15, fontsize=30)
 ax.set_zlabel("Police Call", labelpad=5, fontsize=30)
