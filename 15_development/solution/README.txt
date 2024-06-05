@@ -1,0 +1,1 @@
+The configuration in ninetynine.py hits 99% precision on MNIST. It passes that number for the first time at 20 epochs, but then it drops a bit lower for a while. After 60 epochs, it raises over 99% again, and it just stays there.

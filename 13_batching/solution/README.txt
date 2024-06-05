@@ -1,0 +1,3 @@
+I tried training the network with batch GD and with a few different batch sizes (3, 5, 7, 12, 24) for 20 minutes each. The results are in batch_size.jpg. It seems that batch sizes between 7 and 12 are the smallest that provide earlier feedback than batch GD. However, I'm not sure that this slightly earlier feedback makes a significant difference in practice. I'd generally go for bigger batches, that result in faster training in the medium term.
+
+I also made an experiment with stochastic GD and a few different values of the learning rate. Small learning rates definitely do result in a smoother loss decrease, but they also slow down training to a crawl. Among the values I tried, it seems that a learning rate of 0.01 is the best by far.

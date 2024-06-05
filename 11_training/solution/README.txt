@@ -1,0 +1,46 @@
+This directory contains a version of the neural network that initializes all the weights at zero. I trained it for 250 iterations and got this result:
+
+Iteration:   250, Loss: 2.05127276, Accuracy: 20.90%
+
+That's a disappointing result. By comparison, the network with randomly initialized weights reaches 86.09% accuracy in the same number of iterations.
+
+I also tried printing a few rows from the middle of the two weights matrices after 50 iterations, and got these results for w1:
+
+[[-5.07552514e-05 -5.07552514e-05 -5.07552514e-05 ... -5.07552514e-05
+  -5.07552514e-05 -5.07552514e-05]
+ [-9.77135402e-05 -9.77135402e-05 -9.77135402e-05 ... -9.77135402e-05
+  -9.77135402e-05 -9.77135402e-05]
+ [-1.51995369e-04 -1.51995369e-04 -1.51995369e-04 ... -1.51995369e-04
+  -1.51995369e-04 -1.51995369e-04]
+ ...
+ [ 2.59156333e-05  2.59156333e-05  2.59156333e-05 ...  2.59156333e-05
+   2.59156333e-05  2.59156333e-05]
+ [-3.13550906e-05 -3.13550906e-05 -3.13550906e-05 ... -3.13550906e-05
+  -3.13550906e-05 -3.13550906e-05]
+ [-1.12760031e-04 -1.12760031e-04 -1.12760031e-04 ... -1.12760031e-04
+  -1.12760031e-04 -1.12760031e-04]]
+
+And here are ten rows from inside w2:
+
+[[-0.00468816  0.01599013 -0.00028767 -0.00099862 -0.00304097 -0.00285066
+  -0.00318514  0.00158461 -0.00057181 -0.0019517 ]
+ [-0.00468816  0.01599013 -0.00028767 -0.00099862 -0.00304097 -0.00285066
+  -0.00318514  0.00158461 -0.00057181 -0.0019517 ]
+ [-0.00468816  0.01599013 -0.00028767 -0.00099862 -0.00304097 -0.00285066
+  -0.00318514  0.00158461 -0.00057181 -0.0019517 ]
+ [-0.00468816  0.01599013 -0.00028767 -0.00099862 -0.00304097 -0.00285066
+  -0.00318514  0.00158461 -0.00057181 -0.0019517 ]
+ [-0.00468816  0.01599013 -0.00028767 -0.00099862 -0.00304097 -0.00285066
+  -0.00318514  0.00158461 -0.00057181 -0.0019517 ]
+ [-0.00468816  0.01599013 -0.00028767 -0.00099862 -0.00304097 -0.00285066
+  -0.00318514  0.00158461 -0.00057181 -0.0019517 ]
+ [-0.00468816  0.01599013 -0.00028767 -0.00099862 -0.00304097 -0.00285066
+  -0.00318514  0.00158461 -0.00057181 -0.0019517 ]
+ [-0.00468816  0.01599013 -0.00028767 -0.00099862 -0.00304097 -0.00285066
+  -0.00318514  0.00158461 -0.00057181 -0.0019517 ]
+ [-0.00468816  0.01599013 -0.00028767 -0.00099862 -0.00304097 -0.00285066
+  -0.00318514  0.00158461 -0.00057181 -0.0019517 ]
+ [-0.00468816  0.01599013 -0.00028767 -0.00099862 -0.00304097 -0.00285066
+  -0.00318514  0.00158461 -0.00057181 -0.0019517 ]]
+
+Like you read in the section "Fearful Simmetry", initializing the weights to zero causes all the rows in the weight matrices to contain the same values. That's why the zero-initialized network doesn't get good results: all the hidden nodes are computing the same values. In fact, if you try to reduce the number of hidden nodes in the network from 200 to 10, you'll see that its accuracy doesn't decrease significantly. This zero-initialized network is just as bad with 200 hidden nodes as it is with 10.
