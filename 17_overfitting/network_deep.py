@@ -19,7 +19,7 @@ model.add(Dense(30, activation='sigmoid'))
 model.add(Dense(2, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy',
-              optimizer=RMSprop(lr=0.001),
+              optimizer=RMSprop(learning_rate=0.001),
               metrics=['accuracy'])
 
 history = model.fit(X_train, Y_train,
