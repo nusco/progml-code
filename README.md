@@ -1,6 +1,6 @@
 # "Programming Machine Learning" Source Code
 
-This is the source code for Paolo Perrotta's [Programming Machine Learning](http://www.pragprog.com/titles/pplearn), updated to run on a recent Python and recent libraries. It contains a few small differences from the code printed in the book. If you find any issue, please open an [issue](https://github.com/nusco/progml-code/issues) or send me a pull request.
+This is the source code for Paolo Perrotta's [Programming Machine Learning](http://www.pragprog.com/titles/pplearn), updated to run on a recent Python and recent libraries. It contains minor differences from the code printed in the book. If you find any issue, please open an [issue](https://github.com/nusco/progml-code/issues) or send me a pull request.
 
 To run this code, you need [Python 3](https://www.python.org/downloads/) (or greater) and a few libraries. You can install the libraries via Python's built-in package manager _pip_, or via the more sophisticated _Conda_ package manager. Let's look at both.
 
@@ -18,7 +18,7 @@ If you have Python 3, then you should also have pip. You can install the librari
     pip3 install seaborn==0.13.2
     pip3 install scikit-learn==1.5.0
     pip3 install keras==3.3.3
-    pip3 install tensorflow==
+    pip3 install tensorflow==2.16.1
 
 If you prefer to run the code in a Jupyter Notebook, then you also need Jupyter:
 
@@ -47,6 +47,7 @@ Next step, you can install libraries in the active environment:
     conda install seaborn=0.13.2
     conda install scikit-learn=1.5.0
     conda install keras=3.3.3
+    conda install tensorflow==2.16.1
     conda install jupyter=1.0.0
 
 The libraries will stay visible as long as the environment is active. Once you deactivate the environment with `conda deactivate`, or close the terminal, the libraries are gone. To re-activate the environment and get back the libraries, use `conda activate machinelearning` again.
