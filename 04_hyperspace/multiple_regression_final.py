@@ -29,4 +29,4 @@ w = train(X, Y, iterations=100000, lr=0.001)
 print("\nWeights: %s" % w.T)
 print("\nA few predictions:")
 for i in range(5):
-    print("X[%d] -> %.4f (label: %d)" % (i, predict(X[i], w), Y[i]))
+    print("X[%d] -> %.4f (label: %d)" % (i, predict(X[i], w).item(), Y[i].item()))
