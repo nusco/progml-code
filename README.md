@@ -1,6 +1,6 @@
 # "Programming Machine Learning" Source Code
 
-This is the source code for Paolo Perrotta's [Programming Machine Learning](http://www.pragprog.com/titles/pplearn), updated to run on a recent Python and recent libraries. It contains minor differences from the code printed in the book. If you find any issue, please open an [issue](https://github.com/nusco/progml-code/issues) or send me a pull request.
+This is the source code for Paolo Perrotta's [Programming Machine Learning](http://www.pragprog.com/titles/pplearn), updated to run on versions of Python and the libraries that are still available today. It contains minor differences from the code printed in the book. If you find any issue, please open an [issue](https://github.com/nusco/progml-code/issues) or send me a pull request.
 
 To run this code, you need [Python 3](https://www.python.org/downloads/) (or greater) and a few libraries. You can install the libraries via Python's built-in package manager _pip_, or via the more sophisticated _Conda_ package manager. Let's look at both.
 
@@ -27,8 +27,7 @@ If you prefer to run the code in a Jupyter Notebook, then you also need Jupyter:
 
 ### Installing with Conda
 
-If you want to control the visibility of your libraries, consider installing them with the [Conda](https://conda.io) package manager. Compared to pip, Conda
-helps you keep Python environments tidy and isolated. On the minus side, Conda doesn't always play nice with other package managers, such as Homebrew. I prefer Conda to pip, but your mileage may vary.
+Maybe you want to restrict the visibility of your libraries. For example, maybe you already have more recent and incompatible versions installed, and you don't want to downgrade your local installations. In this case, consider installing the libraries with the [Conda](https://conda.io) package manager. Compared to pip, Conda helps you keep Python environments tidy and isolated. On the minus side, Conda doesn't always play nice with other package managers, such as Homebrew. I prefer Conda to pip, but your mileage may vary.
 
 If you opt for Conda, consider downloading the minimal distribution [Miniconda](https://docs.conda.io/en/latest/miniconda.html), because the complete distribution is a large install.
 
